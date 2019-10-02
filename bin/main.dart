@@ -8,6 +8,8 @@ void main(){
   print("Do You want to (a)dd, (r)emove or (s)top?");
   print(names);
   String option = stdin.readLineSync();
+  
+  while(option != "s"){
   if (option == "a"){
     print("What is the name of the student you want to add?");
     String addStudent = stdin.readLineSync();
@@ -23,6 +25,7 @@ void main(){
   else if (option == "s"){
     print("Stopping The Program");
     exit(0);
+  }
   }
 }
 
